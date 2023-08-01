@@ -2,7 +2,6 @@ import { useDrag } from "react-dnd";
 import { useDispatch } from "react-redux";
 import { removeBoxContainer } from "./store/containerBoxesSlice";
 import { addBoxToRow } from "./store/boxesRowSlice";
-import "../public/all.min.css";
 
 const Box = (props) => {
   const dispatch = useDispatch();
