@@ -1,5 +1,6 @@
 # Drag and Drop with ReactDnD
 <br>
+
 ## Project Overview
 
 This project that utilizes React, React DnD, and Redux The main goal of the project is to implement a drag and drop functionality where users can drag boxes from a list component into another container component. The project also displays the offset from the container's border after dropping a box. Additionally, users can delete boxes from the container, which will return the boxes to the original list.
@@ -24,6 +25,7 @@ This project that utilizes React, React DnD, and Redux The main goal of the proj
 React DnD (Drag and Drop) is utilized to implement the drag-and-drop functionality. The `boxesRow` component is wrapped in a DnD container, and each box in the list is made draggable. The `Container` component is wrapped in another DnD container to allow dropping the boxes.
 
 <br>
+
 ### Components
 
 The project is structured using reusable React components. Here is a list of the main components:
