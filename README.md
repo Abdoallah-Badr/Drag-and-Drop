@@ -1,5 +1,4 @@
 # Drag and Drop with ReactDnD
-<br>
 
 ## Project Overview
 
@@ -7,7 +6,6 @@ This project that utilizes React, React DnD, and Redux The main goal of the proj
 
 [✨ live website ](https://draganddropapp.vercel.app/)
 
-<br>
 <br>
 
 ## Features
