@@ -1,30 +1,42 @@
 import { useDrag } from "react-dnd";
+import { useDispatch } from "react-redux";
+import { removeBoxContainer } from "./store/containerBoxesSlice";
+import { addBoxToRow } from "./store/boxesRowSlice";
+import "../public/all.min.css";
 
-const Box = ({ left, top, id, position, children }) => {
-  const [{ isDragging, dropped, pos }, drag] = useDrag(
+const Box = (props) => {
+  const dispatch = useDispatch();
+  const { top, left, id, dropped } = { ...props };
+  const [{}, drag] = useDrag(
     () => ({
       type: "BOX",
       item: { id, left, top },
       collect: (monitor) => ({
-        isDragging: monitor.isDragging(),
-        dropped: monitor.didDrop(),
-        pos: monitor.getDifferenceFromInitialOffset(),
+        isDropped: monitor.didDrop(),
       }),
     }),
     [id, left, top]
   );
-  console.log(pos);
   return (
     <div
       ref={drag}
       id={id}
       className="box"
-      style={{ left, top, position: position }}
+      style={{ left, top, position: dropped ? "absolute" : "relative" }}
     >
-      {position && ( // because we pass a value for it when only drop on the container when we need this texts shown
+      {dropped && (
         <>
           <p>{`x: ${left}`}</p>
           <p>{`y: ${top}`}</p>
+          <button
+            onClick={() => {
+              dispatch(removeBoxContainer(id));
+              dispatch(addBoxToRow(id));
+            }}
+            className="deleteBtn"
+          >
+            <p>x</p>
+          </button>
         </>
       )}
     </div>

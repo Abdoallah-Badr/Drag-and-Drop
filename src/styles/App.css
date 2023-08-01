@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+  position: relative;
+  background-color: rgb(246, 241, 233);
+  height: 91vh;
+  padding: 2em;
+}
+h1 {
+  margin-top: 0;
+}

@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import AppProvider from './AppProvider';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./styles/index.css";
+import AppProvider from "./AppProvider";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <AppProvider />

@@ -1,0 +1,37 @@
+
+.boxes-row {
+  border: 2px black solid;
+  padding: 5px;
+  width: max-content;
+  margin: 10px auto;
+  display: flex;
+  position: relative;
+}
+.box {
+  width: 55px;
+  height: 55px;
+  padding: 2px;
+  margin: 0 5px;
+  border-radius: 4px;
+}
+.box > p {
+  margin: 0.25em 0;
+  color: #ffffff;
+}
+
+
+#b1 {
+  background-color: rgb(165, 202, 237);
+}
+#b2 {
+  background-color: rgb(150, 188, 226);
+}
+#b3 {
+  background-color: rgb(116, 155, 194);
+}
+#b4 {
+  background-color: rgb(94, 125, 157);
+}
+#b5 {
+  background-color: rgb(53, 98, 128);
+}
