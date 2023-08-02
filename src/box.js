@@ -34,7 +34,7 @@ const Box = (props) => {
             }}
             className="deleteBtn"
           >
-            <p>x</p>
+            <p>+</p>
           </button>
         </>
       )}
